@@ -132,7 +132,7 @@ write xarray to geotiff. input arguments:
 def write_xarray_to_GeoTiff(array, outfilename,north_up=True):
 
     # check filename suffix is .tif
-    if outfilename[:-4]!='.tif':
+    if outfilename[-4:]!='.tif':
         outfilename=outfilename+'.tif'
 
     # Some dimension info
