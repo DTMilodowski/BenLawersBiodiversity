@@ -43,10 +43,10 @@ useful to know what we are dealing with.
 # To open a raster dataset is easy enough to do. We need the name of the file in
 # question, alongside it's full path
 raster_file = '' # the raster file (fyll path)
-print(agb_file) # print filename to screen
+print(raster_file) # print filename to screen
 
 # open file and store data in an xarray called agb
-ds = xr.open_rasterio(agb_file)
+ds = xr.open_rasterio(raster_file)
 print(type(ds))
 
 # Let's explore the xarray structure a little
